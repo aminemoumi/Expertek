@@ -45,11 +45,12 @@ header .menu li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
 }
 .container-text h1 {
     color: #fff;
-    font-size: 70px;
+    font-size: 40px;
     text-transform: capitalize;
     font-family: 'Kaushan Script', cursive;
 }
