@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harmony Events</title>
+    <title>Expertek</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("IsgvslqytWOzvYyz9"); // Remplacez par votre User ID réel
+        })();
+    </script>
     <script src="https://kit.fontawesome.com/4de42068d5.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -13,7 +19,7 @@
      <section id="container">
       <header>
         <div class="logo">
-            <p>Harmony Events</p>
+            <p>Expertek</p>
         </div>
 
         <!-- menu responsive -->
@@ -27,21 +33,23 @@
         </ul>
       </header>
       <div class="container-text">
-          <h1>Vos Events en Harmony, Souvenirs Remplis de Magie</h1>
+          <h1>Expertek, L'expertise Technique à Votre Service</h1>
       </div>
     </section> 
 
     <!-- section a propos -->
      <section id="a-propos">
-        <div>
-            <p class="tittle-section">à propos</p>
-            <h1 class="sub-tittle-section">Qui sommes nous ?</h1>
+        <div id="card">
+           <div class="ti"><p class="tittle-section">à propos</p>
+            <h1 class="sub-tittle-section">Qui sommes nous ?</h1></div> <br> 
             <div class="description-photo">
                     <div class="desc">
-                        <p>Nous sommes spécialisés dans l'organisation d'événements, la location d'équipements, la vente de repas et de boissons, la livraison et la pose de matériel, et les services d'entretien et de gardiennage. Découvrez nos services pour des événements réussis. Contactez-nous pour plus d'informations ! 
-                        </p>
+                       <p>Bienvenue chez Expertek, le spécialiste de vos projets de plomberie, électricité, carrelage, et rénovation intérieure. Depuis notre création, nous avons pour mission de fournir des services de haute qualité qui allient durabilité, esthétique et fonctionnalité. Nos équipes d'experts, passionnées et dédiées, utilisent leur savoir-faire pour garantir des résultats qui non seulement répondent, mais surpassent vos attentes.</p> <br>
+                        <p> Chez Expertec, nous valorisons la transparence et la communication. Chaque projet commence par une consultation détaillée pour comprendre vos besoins spécifiques et vos préférences. Nous nous engageons à vous proposer des solutions personnalisées qui respectent vos contraintes de temps et de budget, tout en assurant un suivi rigoureux tout au long du processus.</p>
+                    
 
-                        <H2>NOS SERVICES</H2>
+                     
+                
                         <div class="list-services">
                             <div class="service">
                                 <i class="fas fa-tachometer-alt"></i>
@@ -57,7 +65,6 @@
                             </div>
                         </div>
                 </div>
-                <img src="images/teamwork-3213924_1280.jpg" alt="">
             </div>
         </div>
     </section> 
@@ -65,23 +72,23 @@
     <!-- section gallerie destination -->
     <section id="gallerie">
             <p class="tittle-section">NOS SERVICES</p>
-            <h1 class="sub-tittle-section">Ce que vous voulez, quand vous voulez !</h1>
+            <h1 class="sub-tittle-section">Ce que vous voulez, quand vous voulez ! Contactez-nous pour établir un devis. <br> Prendre aussi en compte les déplacements 50€ pour paris intra-muros et en region parisienne 90€.</h1>
             <div class="liste-photos">
                 <div class="gallerie-img">
-                    <img src="images/menage.jpg" alt="">
-                    <div class="show-country"><p>MENAGE ET ENTRETIEN</p></div>
+                    <img src="images/building-1080599_1280.jpg" alt="">
+                    <div class="show-country"><p>Carrelage</p></div>
                 </div>
                 <div class="gallerie-img">
-                    <img src="images/table-setting-791149_1280.jpg" alt="">
-                    <div class="show-country"><p>LIVRAISON ET POSE MATERIELS</p></div>
+                    <img src="images/electrician-2755682_1280.jpg" alt="">
+                    <div class="show-country"><p>Electricité</p></div>
                 </div>
                 <div class="gallerie-img">
-                    <img src="images/brunch.jpg" alt="">
-                    <div class="show-country"><p>VENTE REPAS ET BOISSONS</p></div>
+                    <img src="images/painting-2057373_1280.jpg" alt="">
+                    <div class="show-country"><p>Rénovation intérieure Et Extérieur</p></div>
                 </div>
                 <div class="gallerie-img">
-                    <img src="images/coffee.jpg" alt="">
-                    <div class="show-country"><p>LOCATION DE MACHINE</p></div>
+                    <img src="images/plumber-228010_1280.jpg" alt="">
+                    <div class="show-country"><p>Plomberie</p></div>
                 </div>
 
             </div>
@@ -90,26 +97,33 @@
 <!--  section contact -->
     <section id="contact">
         <p class="tittle-section">contact</p>
-        <h1 class="sub-tittle-section">formulaire de contact</h1>
-        <div>
-            <form action="">
-                <label>Adresse Mail</label>
-                <input type="text" placeholder="Ex: azerty@gmail.com">
-                <label>Message</label>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Votre message..."></textarea>
-                <input type="submit" value="ENVOYER">
-            </form>
-            <div class="sociale">
-                <ul>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ul>
-            </div>
-            <div class="images-contact">
-                <img src="images/iphone-410324_1920.jpg" alt="">
-            </div>
+        <h1 class="sub-tittle-section">formulaire de contact <br>
+        Notre numéro : 06 02 81 14 93</h1>
+        <br>
+        <div class="mail">
+            <form action="" class="contact__form" id="contact-form">
+                <div style="margin-bottom: 0.5rem;" class="contact__form-div">
+                    <label class="contact__form-tag">
+                        Name
+                    </label>
+                    <input style="width: 100%;"   type="text" name="user_name" required placeholder="Your name" class="contact__form-input" id="contact-name">
+                </div>
+                <div style="margin-bottom: 0.5rem;" class="contact__form-div">
+                    <label class="contact__form-tag">
+                        Email
+                    </label>
+                    <input style="width: 100%;" type="email" name="user_email" required placeholder="Your email" class="contact__form-input" id="contact-email">
+                </div>
+                <div class="contact__form-div contact__form-area">
+                    <label  class="contact__form-tag">
+                        Text
+                    </label>
+                    <textarea style="width: 100%; height: 65%;" name="user_project" placeholder="Ask me something?" id="contact-project" class="contact__form-input"></textarea>
+                </div>
+                <p class="contact__message" id="contact-message"></p>
+                <button type="submit" class="contact__button">
+                    Send <i class="ri-arrow-right-up-line"></i>
+                </button>
         </div>
     </section>
 
@@ -124,7 +138,45 @@
     menu_toggle.onclick = function(){
         menu_toggle.classList.toggle('active') ; 
         menu.classList.toggle('responsive') ; 
+    };
+
+    const contactForm = document.getElementById('contact-form'),
+      contactName = document.getElementById('contact-name'),
+      contactEmail = document.getElementById('contact-email'),
+      contactProject = document.getElementById('contact-project'),
+      contactMessage = document.getElementById('contact-message')
+
+const sendEmail = (e) =>{
+    e.preventDefault()
+    // Check if the field has a value
+    if(contactName.value===''||contactEmail.value===''||contactProject.value===''){
+        // Remove blue color and add red color
+        contactMessage.classList.remove('color-blue')
+        contactMessage.classList.add('color-red')
+        // Show message
+        contactMessage.textContent='Please fill all the input fields!'
+    }else{
+        // serviceID - templateID - #form - publicKey
+        emailjs.sendForm('service_uaqfdi2','template_nndaxlb','#contact-form','IsgvslqytWOzvYyz9')
+            .then(() =>{
+                // Show message and add color
+                contactMessage.classList.add('color-blue')
+                contactMessage.textContent='Message sent!'
+                // Remove message after 5 seconds
+                setTimeout(() =>{
+                    contactMessage.textContent=''
+                },5000)
+            }, (error) => {
+                alert('Oops! Please try again!', error)
+            })
+        // Clear the input field
+        contactName.value = ''
+        contactEmail.value = ''
+        contactProject.value = ''
     }
+}
+contactForm.addEventListener('submit',sendEmail)
+
 </script>
 
 </body>
